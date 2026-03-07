@@ -1,0 +1,31 @@
+name: Check Tools Versions
+
+# Workflow trigger: jab main branch me push ho
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  print-versions:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Print Docker version
+      - name: Docker Version
+        run: docker --version
+
+      # Step 3: Print Python version
+      - name: Python Version
+        run: python3 --version
+
+      # Step 4: Print Node version
+      - name: Node Version
+        run: node --version
+
+      # Step 5: Print Git version
+      - name: Git Version
+        run: git --version
