@@ -1,0 +1,30 @@
+name: multiple_jobs
+on:
+  push:
+    branches:
+      - main
+jobs:
+  ubuntu-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: o.s info
+        run: |
+          echo "operating system: ubuntu"
+          echo "Hostname: #(hostname)"
+          echo "current user: $(whoami)"
+  window-jobs:
+    runs-on: window-latest
+    steps:
+      - name: print Os info
+        run: ""
+        echo "operating Systemt: window"
+        echo "Hostname: COMPUTER%"
+        echo "current user: USERNAME%"
+  Mac-jobs:
+    runs-on: macos-latest
+    steps:
+      - name: print os info
+        run: ""
+        echo "operating system: macos"
+        echo "Hostname: $(hostname)"
+        echo "current user: $(whoami)"
