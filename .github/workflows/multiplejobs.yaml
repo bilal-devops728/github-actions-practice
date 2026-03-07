@@ -1,6 +1,6 @@
 name: multiple_jobs
 on:
-  push:
+ push:
     branches:
       - main
 jobs:
