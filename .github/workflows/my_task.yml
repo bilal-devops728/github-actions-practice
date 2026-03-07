@@ -13,7 +13,10 @@ jobs:
 
        - name: print pre installed tools
          run: |
-         echo "docker version"
+
+         echo "Docker versions'
+         docker --version
+         
          docker --version
          echo "python version"
          python --version
