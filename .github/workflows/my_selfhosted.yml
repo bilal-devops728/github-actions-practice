@@ -1,0 +1,12 @@
+name: 1st selfhosted
+on:
+  push:
+    branches: null
+jobs:
+  1st job:
+    runs-on: Bilal_selfhosted
+    steps:
+      - name: print the hostname
+        run: hostname
+      - name: working dir
+        run: pwd
