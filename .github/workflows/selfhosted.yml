@@ -1,0 +1,12 @@
+---
+name: Self_hostedrunner
+on:
+  push:
+    branches:
+      - main
+jobs:
+  myjob:
+    runs-on: bilal_selfhosted_runner
+    steps:
+      - name: print the python version
+        run: python --version
