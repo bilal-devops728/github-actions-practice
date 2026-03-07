@@ -1,4 +1,4 @@
-name: multiple_jobs
+name: os.info
 on:
  push:
     branches:
