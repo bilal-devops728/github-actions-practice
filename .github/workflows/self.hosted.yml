@@ -1,0 +1,14 @@
+name: 1st selfhosted
+on:
+ push:
+   branches: [main]
+   
+jobs:
+  1st_job:
+     runs-on: bilal_selfhosted_runner
+
+    steps:
+      - name: "print the hostname"
+        run: hostname
+      - name: "working dir"
+        run: pwd
